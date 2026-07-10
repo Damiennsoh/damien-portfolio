@@ -1,43 +1,29 @@
-import type React from "react"
-import "@/app/globals.css"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-
-const inter = Inter({ subsets: ["latin"] })
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Damien Nsoh Ayine",
-  description:
-    "Professional portfolio showcasing expertise in web development, cybersecurity, IT support, graphic design, and video editing.",
-    generator: 'v0.dev'
-}
+  title: "Damien Nsoh Ayine | Software Engineer | DevOps | Cybersecurity",
+  description: "Full-Stack Software Engineer with a unique background in public health. Building AI-native applications, cloud infrastructure, and secure systems that bridge technology and human impact.",
+  keywords: ["Software Engineer", "DevOps", "Cybersecurity", "AI", "Full-Stack", "Next.js", "React", "Python", "AWS", "Ghana"],
+  authors: [{ name: "Damien Nsoh Ayine" }],
+  openGraph: {
+    title: "Damien Nsoh Ayine | Software Engineer",
+    description: "Full-Stack Engineer bridging public health and technology. AI-native apps, cloud infrastructure, and secure systems.",
+    type: "website",
+    locale: "en_US",
+  },
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta name="color-scheme" content="light dark" />
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
+    <html lang="en" className="scroll-smooth">
+      <body className="antialiased">
+        {children}
       </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'

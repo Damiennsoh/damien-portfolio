@@ -1,43 +1,129 @@
-# Damien Nsoh Ayine - Professional Portfolio
+# Damien Nsoh Ayine - Portfolio Website
 
-![Portfolio Banner](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-20%20at%2015.54.29-s6u0yktiWH3JASQrIbQgF84q5oZ1QU.jpeg)
+A modern, responsive portfolio website built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-## 📋 Overview
+## 🚀 Features
 
-This is a professional portfolio website built with Next.js and Tailwind CSS, showcasing my skills, projects, and professional experience as a Computer Science professional specializing in web development, cybersecurity, IT support, graphic design, and video editing.
+- **Dark theme** with teal accent color (`#14b8a6`)
+- **Smooth scroll animations** powered by Framer Motion
+- **Responsive design** - mobile-first approach
+- **Interactive timeline** for work experience (click to expand)
+- **Contact form** with API route and validation
+- **Resume download** functionality
+- **SEO optimized** with metadata
+- **Glass morphism** UI elements
+- **Animated hero section** with floating elements
 
-The portfolio serves as a comprehensive digital resume and project showcase, designed to appeal to prospective employers and clients in the tech industry.
+## 📁 Project Structure
 
-## ✨ Features
+```
+damien-portfolio/
+├── app/                      # Next.js App Router
+│   ├── api/contact/          # Contact form API endpoint
+│   ├── globals.css           # Global styles, animations, custom classes
+│   ├── layout.tsx            # Root layout with metadata/SEO
+│   └── page.tsx              # Home page assembling all sections
+├── components/
+│   ├── Navbar.tsx            # Sticky navigation with mobile hamburger
+│   └── sections/
+│       ├── Hero.tsx          # Full-screen hero with animated profile
+│       ├── About.tsx         # Story + impact stats grid
+│       ├── Experience.tsx    # Interactive timeline
+│       ├── Projects.tsx      # Project cards with hover effects
+│       ├── Skills.tsx        # Skills grid + education & certs
+│       ├── Resume.tsx        # Resume download section
+│       ├── Contact.tsx       # Contact form + info
+│       └── Footer.tsx        # Footer with social links
+├── lib/
+│   ├── data.ts               # All portfolio data (experience, projects, skills, etc.)
+│   └── utils.ts              # Utility helper (cn function)
+├── public/
+│   ├── resume.pdf            # Your resume (replace this!)
+│   └── images/               # Add your profile photo here
+├── package.json
+├── tsconfig.json
+├── next.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
 
-- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop devices
-- **Dark/Light Mode**: Theme toggle with system preference detection
-- **Interactive UI**: Modern, clean interface with smooth animations and transitions
-- **Project Showcase**: Filterable gallery of projects with detailed information
-- **Resume**: Downloadable and printable resume with comprehensive skills and experience sections
-- **Contact Form**: Interactive contact form for potential employers or clients
-- **SEO Optimized**: Meta tags and structured data for better search engine visibility
-
-## 🛠️ Technologies
-
-- **Framework**: [Next.js 14](https://nextjs.org/) (React framework with App Router)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) for accessible, customizable components
-- **Icons**: [Lucide React](https://lucide.dev/) for beautiful, consistent icons
-- **Theming**: [next-themes](https://github.com/pacocoursey/next-themes) for dark/light mode support
-- **Typography**: [Inter](https://fonts.google.com/specimen/Inter) font from Google Fonts
-- **PDF Generation**: HTML to PDF conversion for resume downloads
-
-## 🚀 Getting Started
+## 🛠️ Getting Started
 
 ### Prerequisites
-
-- Node.js 18.x or later
-- npm or yarn package manager
+- Node.js 18+
+- npm or yarn
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Damiennsoh/portfolio-website.git
-   cd portfolio-website
+```bash
+# Navigate to project directory
+cd damien-portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Open http://localhost:3000 in your browser
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates a static export in the `out/` directory (configured in `next.config.js`).
+
+## 📝 Customization Guide
+
+### 1. Replace Placeholder Images
+- Add your profile photo to `public/images/profile.jpg`
+- Update `components/sections/Hero.tsx` to use your image instead of initials
+
+### 2. Update Resume
+- Replace `public/resume.pdf` with your actual resume PDF
+
+### 3. Update Project Links
+- In `lib/data.ts`, update `liveUrl` and `githubUrl` for each project
+
+### 4. Add Real Project Images
+- Add screenshots to `public/images/projects/`
+- Update project cards to display images
+
+### 5. Configure Contact Form
+- The contact form currently logs to console
+- Integrate with an email service (SendGrid, Resend, Nodemailer) in `app/api/contact/route.ts`
+
+### 6. Update Personal Info
+- Edit `lib/data.ts` to update any personal information, stats, or content
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+```bash
+npm install -g vercel
+vercel
+```
+
+### Other Platforms
+The project is configured for static export. The build output is in the `out/` directory.
+
+## 🎨 Design System
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| Background | `#0a0a0a` | Page background |
+| Surface | `#171717` | Cards, panels |
+| Accent | `#14b8a6` | CTAs, highlights, borders |
+| Foreground | `#f5f5f5` | Primary text |
+| Muted | `#737373` | Secondary text |
+
+## 📄 License
+
+MIT License - feel free to use this template for your own portfolio.
+
+---
+
+**Built with ❤️ by Damien Nsoh Ayine**
