@@ -62,6 +62,8 @@ export default function Projects() {
                     </a>
                     <a
                       href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-surface hover:bg-accent/10 text-muted hover:text-accent transition-all"
                     >
                       <ExternalLink size={18} />
