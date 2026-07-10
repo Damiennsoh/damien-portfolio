@@ -157,8 +157,8 @@ export const projects = [
     title: "Student Management Hub",
     description: "A comprehensive full-stack AI-native student management system with real-time data sync, bulk data processing, and administrative dashboards.",
     tech: ["Next.js", "TypeScript", "Firebase", "SQL", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Damiennsoh",
+    liveUrl: "https://v0-school-management-app-hh.vercel.app/",
+    githubUrl: "https://github.com/Damiennsoh/Student_Enrollment_System-1m",
     highlights: ["50% reduced admin time", "Real-time sync", "Bulk data processing"],
   },
 ]
