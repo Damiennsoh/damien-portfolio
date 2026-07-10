@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, ExternalLink, Github, Linkedin } from "lucide-react";
 import { personalInfo } from "@/lib/data";
+import Image from "next/image";
 
 export default function Hero() {
   const handleScrollTo = (id: string) => {
@@ -156,16 +157,20 @@ export default function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-accent/5 rounded-full blur-2xl animate-pulse-glow" />
 
               {/* Profile circle */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 border-accent/20 flex items-center justify-center bg-surface animate-float">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 border-accent/20 flex items-center justify-center bg-surface animate-float overflow-hidden">
                 {/* Inner ring */}
-                <div className="absolute inset-4 rounded-full border border-accent/10" />
-                <div className="absolute inset-8 rounded-full border border-accent/5" />
+                <div className="absolute inset-4 rounded-full border border-accent/10 pointer-events-none" />
+                <div className="absolute inset-8 rounded-full border border-accent/5 pointer-events-none" />
 
-                {/* Initials */}
-                <div className="text-center">
-                  <span className="text-6xl sm:text-7xl font-bold gradient-text">DA</span>
-                  <p className="mt-2 text-sm text-muted">Kumasi, Ghana</p>
-                </div>
+                {/* Profile Image */}
+                <Image
+                  src="/profile.jpg"
+                  alt="Damien Nsoh Ayine"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-cover"
+                  priority
+                />
 
                 {/* Orbiting dots */}
                 <motion.div
