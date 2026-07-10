@@ -139,8 +139,8 @@ export const projects = [
     title: "Afia Health Assistant",
     description: "An offline-first progressive web app for clinical decision support in rural Ghana clinics. Uses Google Gemini AI for symptom assessment and treatment recommendations aligned with national health standards.",
     tech: ["Next.js 15", "React 19", "TypeScript", "Gemini AI", "IndexedDB", "Firebase", "Web Workers"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Damiennsoh",
+    liveUrl: "https://afia-health-assistant-bw-lilac.vercel.app/",
+    githubUrl: "https://github.com/Damiennsoh/afia-health-assistant-bw",
     highlights: ["<100ms search latency", "15+ clinics deployed", "10,000+ patient records"],
   },
   {
