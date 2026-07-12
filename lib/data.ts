@@ -145,12 +145,12 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Genomic Analysis Pipeline",
-    description: "Collaboration with Stanford School of Medicine to process genomic datasets using distributed computing on AWS EMR. Built ensemble ML models for disease prediction and designed end-to-end ETL pipelines.",
-    tech: ["AWS EMR", "Spark", "Hadoop", "Python", "Scikit-learn", "Pandas", "Machine Learning"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Damiennsoh",
-    highlights: ["2TB+ data processed", "85% prediction accuracy", "Weeks to 48 hours analysis time"],
+    title: "NEPS Digital Infrastructure & DevOps",
+    description: "Central nervous system for NEPS Digital ecosystem, providing core infrastructure for microservices including backend, data engineering, analytics, and MI/AI teams. Implements robust networking, security enforcement, and comprehensive health monitoring across the entire platform.",
+    tech: ["Docker", "Docker Compose", "Nginx", "Prometheus", "Grafana", "Loki", "Alertmanager", "GitHub Actions", "Dependabot"],
+    liveUrl: "https://github.com/NEPSDigitalSystem/neps-infrastructure",
+    githubUrl: "https://github.com/NEPSDigitalSystem/neps-infrastructure",
+    highlights: ["Containerized microservices architecture", "HTTPS/TLS security with Docker Secrets", "Real-time monitoring with Prometheus/Grafana", "Automated CI/CD pipelines with GitHub Actions"],
   },
   {
     id: 4,
