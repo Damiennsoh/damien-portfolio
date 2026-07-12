@@ -130,8 +130,8 @@ export const projects = [
     title: "NGO Proposal Builder",
     description: "An AI-native SaaS platform that enables NGOs to create donor-specific proposals via natural language input. Features real-time AI suggestion streams, drag-and-drop form builders, budget-sync engines, and multi-format export.",
     tech: ["Next.js 15", "React 19", "TypeScript", "Gemini 2.5 Flash", "Node.js", "Python", "Firebase", "Firestore"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Damiennsoh",
+    liveUrl: "https://ngo-proposal-builder.vercel.app/",
+    githubUrl: "https://github.com/Damiennsoh/NGO_Proposal_Builder",
     highlights: ["60% faster proposal writing", "EU/USAID donor logic", "Offline-first with IndexedDB"],
   },
   {
