@@ -145,12 +145,12 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Genomic Analysis Pipeline",
-    description: "Collaboration with Stanford School of Medicine to process genomic datasets using distributed computing on AWS EMR. Built ensemble ML models for disease prediction and designed end-to-end ETL pipelines.",
-    tech: ["AWS EMR", "Spark", "Hadoop", "Python", "Scikit-learn", "Pandas", "Machine Learning"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Damiennsoh",
-    highlights: ["2TB+ data processed", "85% prediction accuracy", "Weeks to 48 hours analysis time"],
+    title: "NEPS Digital System",
+    description: "A public-facing project page for the NEPS Digital System — a youth mental health research platform operating across Ghana, Sierra Leone, and Tanzania. Provides external stakeholders (funders, institutional partners, ethics boards) with a professional overview of the project without exposing private code, API endpoints, or sensitive infrastructure details.",
+    tech: ["HTML", "CSS", "GitHub Pages", "Static Site"],
+    liveUrl: "https://nepsdigitalsystem.github.io/neps-public-site/",
+    githubUrl: "https://github.com/NEPSDigitalSystem/neps-public-site",
+    highlights: ["Multi-country research platform", "Professional stakeholder overview", "Secure public deployment"],
   },
   {
     id: 4,
