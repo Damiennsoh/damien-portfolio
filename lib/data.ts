@@ -146,11 +146,11 @@ export const projects = [
   {
     id: 3,
     title: "NEPS Digital System",
-    description: "A public-facing project page for the NEPS Digital System — a youth mental health research platform operating across Ghana, Sierra Leone, and Tanzania. Provides external stakeholders (funders, institutional partners, ethics boards) with a professional overview of the project without exposing private code, API endpoints, or sensitive infrastructure details.",
-    tech: ["HTML", "CSS", "GitHub Pages", "Static Site"],
+    description: "DevOps Engineer for a youth mental health research platform operating across Ghana, Sierra Leone, and Tanzania. Responsible for building and managing the entire infrastructure as the central nervous system that orchestrates microservices (portal, backend, ML-AI, data-platform), enforces security, and monitors system health. Built containerized architecture with Docker/Docker Compose, implemented Nginx reverse proxy with HTTPS/security headers, PostgreSQL 15 with automated Point-In-Time Recovery (PITR), comprehensive monitoring stack (Prometheus, Grafana, Loki, Alertmanager), and CI/CD pipelines with GitHub Actions. The public-facing site showcases infrastructure work to stakeholders without exposing private organizational repositories.",
+    tech: ["Docker", "Docker Compose", "Nginx", "PostgreSQL 15", "Prometheus", "Grafana", "Loki", "Alertmanager", "GitHub Actions", "Trivy", "GHCR"],
     liveUrl: "https://nepsdigitalsystem.github.io/neps-public-site/",
     githubUrl: "https://github.com/NEPSDigitalSystem/neps-public-site",
-    highlights: ["Multi-country research platform", "Professional stakeholder overview", "Secure public deployment"],
+    highlights: ["Infrastructure orchestration", "Automated PITR & disaster recovery", "Security hardening & monitoring", "CI/CD automation"],
   },
   {
     id: 4,
